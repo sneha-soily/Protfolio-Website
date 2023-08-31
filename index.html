@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28151ae84b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="pictures/Sneha-logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Protfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Sneha Ghosh</span><br>From Bangladesh</h1>
+        </div>
+    </div>
+</div>
+<!.......................about.............>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am a student and recent completed my graduation in BSc in Computer Science Engineering Undergradute student at 
+                    American International University of Bangladesh. I am looking for Internship. I have to interest in Front-End 
+                    working site. I also worked in project of Java and Front-End site. I also worked as a executive in ESAB Club. So, I am 
+                    seeking for a position in industry to learn,grow and gain experience.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                            <li><span>Software Quality Assurance</span><br>Making Testing and Bug Reports</li>
+                            <li><span>Data Analyst</span><br>Working with Data</li>
+                            <li><span>Anothers Skills</span><br>Communication, Team Work, Art/Design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>SQA course at Bug Resistance</li>
+                            <li><span>2023</span><br>Data Analyst learned academic experince</li>
+                            <li><span>2022</span><br>Web Development at American International University of Bangladesh</li>
+                            <li><span>2020-2023</span><br>Language: Java, Javascript, HTML, SQL, CSS</li>
+                            <li><span>2020-2023</span><br>Database: MySQL, Oracle</li>
+                            <li><span>2020-2023</span><br>Tools: Jira, ClickUp, Selenium, Canve, Photoshop</li>
+                            <li><span>2020-2023</span><br>Microsoft Office Tools: Excel, Powerpoint, Word</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>American International University of Bangladesh<br>
+                                <span>BSc. Computer Science and Engineering</span><br><span>CGPA: 3.86 out of 4.00</span></li>
+                            <li><span>2017-2019</span><br>Nawabganj Govt. Women Collage<br>
+                                <span>Group Science</span><br><span>GPA: 3.55 out of 5.00</span></li>
+                            <li><span>2015-2017</span><br>Nawabganj Govt. Girls High School<br>
+                            <span>Group Science</span><br><span>GPA: 4.89 out of 5.00</span></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!............................Services..................>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Create a visual representation of the website, considering UX, UI, accessibility, 
+                and branding.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Software Quality Assurance</h2>
+                <p>Create a Manual Testing project, Test Case Writting, Bug Report Writting, API Testing,  Database Testing,
+                    Jira & Clickup Tools, Load Testing, UI Testing and Automation Testing with Selenium.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analyst</h2>
+                <p>Data Cleaning and Analysis data. Also, Exposure to SQL, MySQL. Provide quality assurance of 
+                    imported data, working with quality assurance analysts if necessary.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!............................Protfolio..................>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <h1 class="work-title" data-hover="Let's see work">Web Design</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="pictures/webdesign.png">
+            <div class="layer">
+                <h3>Protfolio Website</h3>
+                <p>This website basically showing my all work and CV also. 
+                    This website actually personal website where showing my portfolio.</p>
+                 <a href="https://github.com/sneha-soily/Protfolio-Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="pictures/web Another Work.png">
+            <div class="layer">
+                <h3>Restuarant Management System Website</h3>
+                <p>This website customer login and reserve their table in advance and also order their food in this website.
+                    They are insert their food review in this website.
+                </p>
+                 <a href="https://github.com/sneha-soily/Web-Technology-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+<!=====================================================================>
+<div class="container">
+    <h1 class="work-title" data-hover="Let's see work">Software Testing Work</h1>
+    <div class="work-list">
+    <div class="work">
+        <img src="pictures/SQA.png">
+        <div class="layer">
+            <h3>Software Quality Assurance with Java</h3>
+            <p>This is my academic project work where using Selenium with Java. This project basically automation testing.</p>
+             <a href="https://github.com/sneha-soily/Software-Quality-Assurance-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="pictures/SRE.png">
+        <div class="layer">
+            <h3>Software Requirement Engineering</h3>
+            <p>This project name Laundry Management System. It is work user requirement and according to user requirement 
+                schedule project management timimg using Clickup Tools.</p>
+             <a href="https://github.com/sneha-soily/Software-Requirement-Engineering-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    </div>
+</div>
+<!=====================================================================>
+<div class="container">
+    <h1 class="work-title" data-hover="Let's see work">Data Analysis Work</h1>
+    <div class="work-list">
+    <div class="work">
+        <img src="pictures/DataScience.png">
+        <div class="layer">
+            <h3>Data Science</h3>
+            <p>This project work in data. Firstly, Cleaning Data, then Data Integration, Data Transformation, Data Reduction 
+                and Data Discretization. Lastly, creating Shiny Dashboard where all work showing in Dashboard. 
+            </p>
+             <a href="https://github.com/sneha-soily/Data-Science-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="pictures/DataBase.png">
+        <div class="layer">
+            <h3>Data Base SQL Project</h3>
+            <p>This project name Daily Life Management System. This project work Normalization where cleaning data 1NF,2NF and 3NF.
+                And then write SQL query where record daily life management system. Through which all records can be kept like 
+                How many calories did you eat, how much did you walk?
+            </p>
+             <a href="https://github.com/sneha-soily/Data-Base-Project-SQL-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!............................Contact..................>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> snehaghosh053@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 01720807441</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/snehasnehu.snehusneha/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sneha.ghosh_01/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sneha-ghosh-b3850926b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="pictures/Cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Write your name" required>
+                    <input type="email" name="Email" placeholder="Write your email" required>
+                    <textarea name="Message" rows="6" placeholder="Write your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>copyright @ Sneha. Made with Protfolio Website</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Qr_9-KsZ_w_7egDkEXJ6Ijaa8n4OP86SxGGs_OmJ9hygml_HmYkaXpn7sfy-iyZN/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            sentTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
